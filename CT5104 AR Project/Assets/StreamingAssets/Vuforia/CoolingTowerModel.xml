@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="CoolingTowerModel" motionHint="adaptive" trackingMode="car" optimizeTrackingFor="default"/>
+
+</Tracking>
+
+<Assembly name="CoolingTowerModels_assembly" assemblyId="714d99490f1f45b28a38cb3f1d690a11">
+<Part name="CoolingTowerModel" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="GuideView_0000" translation="0.000757266 0.0366744 0.264828" rotation="AD: 0.999531 0.110123 -0.308727 217.447" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARConfig>

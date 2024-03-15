@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="27.0" toolVersion="10.21.3">
+<ModelTarget name="CoolingTowerModel" targetId="730cc18b9a364695b8144a76da109bad" version="14.0" toolVersion="10.21.3" bbox="-0.044835 -0.000054 -0.044163 0.044829 0.110823 0.044149" previewImage="730cc18b9a364695b8144a76da109bad_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="CoolingTowerModels_assembly" assemblyId="714d99490f1f45b28a38cb3f1d690a11">
+<Part name="CoolingTowerModel" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="GuideView_0000" translation="0.000757266 0.0366744 0.264828" rotation="AD: 0.999531 0.110123 -0.308727 217.447" image="CoolingTowerModel_GuideView_0000.png" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARInfo>

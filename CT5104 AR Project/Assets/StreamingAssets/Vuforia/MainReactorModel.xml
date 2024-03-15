@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="MainReactorModel" motionHint="adaptive" trackingMode="car" optimizeTrackingFor="default"/>
+
+</Tracking>
+
+<Assembly name="MainReactorModels_assembly" assemblyId="d3b9de9517e0404ead1c092fa7c28dae">
+<Part name="MainReactorModel" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="GuideView_0000" translation="1.15242e-05 0.0336599 0.200563" rotation="AD: -0.401537 -0.999081 2.49735 173.239" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARConfig>
