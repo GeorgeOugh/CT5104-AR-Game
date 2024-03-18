@@ -235,7 +235,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &571388809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,7 +309,7 @@ MonoBehaviour:
   m3DGuideViewModel: {fileID: 0}
   m2DGuideViewImage: {fileID: 0}
   mGuideViewDisplayMode: 2
-  m2DGuideViewMaterial: {fileID: 1136489063}
+  m2DGuideViewMaterial: {fileID: 1103604900}
   m3DGuideViewMaterial: {fileID: 0}
   mLength: 0.051022
   mWidth: 0.09308
@@ -690,7 +690,7 @@ Transform:
   - {fileID: 705507995}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
---- !u!21 &1136489063
+--- !u!21 &1103604900
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -938,7 +938,7 @@ GameObject:
   - component: {fileID: 1514863745}
   - component: {fileID: 1514863744}
   - component: {fileID: 1514863743}
-  - component: {fileID: 1514863742}
+  - component: {fileID: 1514863746}
   m_Layer: 0
   m_Name: ModelTarget
   m_TagString: Untagged
@@ -946,25 +946,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1514863742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1514863741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1621554113, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1514863744}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: CoolingTowerModel
-  mDatasetName: Vuforia/CoolingTowerModel.xml
-  mCastedBehaviour: {fileID: 1514863744}
-  mModelScale: {x: 0.089664, y: 0.110877, z: 0.088312}
-  mModelTargetPreview: {fileID: 0}
 --- !u!114 &1514863743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1040,16 +1021,16 @@ MonoBehaviour:
   mGuideViewDisplayMode: 2
   m2DGuideViewMaterial: {fileID: 801720403}
   m3DGuideViewMaterial: {fileID: 0}
-  mLength: 0.089664
-  mWidth: 0.110877
-  mHeight: 0.088312
+  mLength: 0.049664
+  mWidth: 0.061413668
+  mHeight: 0.04891514
   mSelectedGuideView: GuideView_0000
   mMotionHint: 1
   mTrackingMode: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
   mHasRealisticTextures: 0
-  mPreview: {fileID: 1514863742}
+  mPreview: {fileID: 1514863746}
   mAutoValidationDataSetName: 
 --- !u!4 &1514863745
 Transform:
@@ -1067,6 +1048,25 @@ Transform:
   - {fileID: 695543976}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1514863746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514863741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1621554113, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1514863744}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: CoolingTowerModel
+  mDatasetName: Vuforia/CoolingTowerModel.xml
+  mCastedBehaviour: {fileID: 1514863744}
+  mModelScale: {x: 0.049664, y: 0.061413668, z: 0.04891514}
+  mModelTargetPreview: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
