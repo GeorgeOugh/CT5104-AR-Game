@@ -295,9 +295,9 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: MainReactorModel
+  mTrackableName: MainReactor
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/MainReactorModel.xml
+  mDataSetPath: Vuforia/MainReactor.xml
   mBaseSize: 0.051022
   mAspectRatioXY: 1.824311
   mAspectRatioXZ: 0.9844772
@@ -305,8 +305,9 @@ MonoBehaviour:
   mOverrideSnappingPose: 0
   mBBoxMin: {x: -0.025524, y: -0.000045, z: -0.025119}
   mBBoxMax: {x: 0.025498, y: 0.093035, z: 0.025111}
-  mPreviewImage: {fileID: 2800000, guid: 1150ceaa0dbd44efbb98e16858c53570, type: 3}
-  m3DGuideViewModel: {fileID: 0}
+  mPreviewImage: {fileID: 0}
+  m3DGuideViewModel: {fileID: 2485409121622142393, guid: f8f8221372902ba4f94f155a8a92ccdc,
+    type: 3}
   m2DGuideViewImage: {fileID: 0}
   mGuideViewDisplayMode: 2
   m2DGuideViewMaterial: {fileID: 1103604900}
@@ -314,7 +315,7 @@ MonoBehaviour:
   mLength: 0.051022
   mWidth: 0.09308
   mHeight: 0.050229996
-  mSelectedGuideView: GuideView_0000
+  mSelectedGuideView: 
   mMotionHint: 1
   mTrackingMode: 1
   mTrackingOptimization: 0
@@ -352,8 +353,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 571388810}
   mHiddenRoot: {fileID: 0}
-  mTargetName: MainReactorModel
-  mDatasetName: Vuforia/MainReactorModel.xml
+  mTargetName: MainReactor
+  mDatasetName: Vuforia/MainReactor.xml
   mCastedBehaviour: {fileID: 571388810}
   mModelScale: {x: 0.051022, y: 0.09308, z: 0.050229996}
   mModelTargetPreview: {fileID: 0}
@@ -538,37 +539,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1039939222}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &801720403
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Unlit/Transparent
-  m_Shader: {fileID: 10750, guid: 0000000000000000f000000000000000, type: 0}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
 --- !u!1 &1039939217
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,9 +975,9 @@ MonoBehaviour:
   PreviewVisible: 1
   RuntimeOcclusion: 0
   RuntimeCollider: 0
-  mTrackableName: CoolingTowerModel
+  mTrackableName: CoolingTower
   mInitializedInEditor: 1
-  mDataSetPath: Vuforia/CoolingTowerModel.xml
+  mDataSetPath: Vuforia/CoolingTower.xml
   mBaseSize: 0.089664
   mAspectRatioXY: 1.2365832
   mAspectRatioXZ: 0.9849215
@@ -1015,16 +985,24 @@ MonoBehaviour:
   mOverrideSnappingPose: 0
   mBBoxMin: {x: -0.044835, y: -0.000054, z: -0.044163}
   mBBoxMax: {x: 0.044829, y: 0.110823, z: 0.044149}
-  mPreviewImage: {fileID: 2800000, guid: a21bef29f32b446ca1755c4490ee5a53, type: 3}
-  m3DGuideViewModel: {fileID: 0}
+  mPreviewImage: {fileID: 0}
+  m3DGuideViewModel: {fileID: 4382981131955812516, guid: 4f9fb15e8f4a41041837ab9a2dd7ac3f,
+    type: 3}
   m2DGuideViewImage: {fileID: 0}
   mGuideViewDisplayMode: 2
-  m2DGuideViewMaterial: {fileID: 801720403}
+  m2DGuideViewMaterial: {fileID: 1636269308}
   m3DGuideViewMaterial: {fileID: 0}
+<<<<<<< Updated upstream
   mLength: 0.049664
   mWidth: 0.061413668
   mHeight: 0.04891514
   mSelectedGuideView: GuideView_0000
+=======
+  mLength: 0.089664
+  mWidth: 0.110877
+  mHeight: 0.088312
+  mSelectedGuideView: 
+>>>>>>> Stashed changes
   mMotionHint: 1
   mTrackingMode: 1
   mTrackingOptimization: 0
@@ -1062,11 +1040,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mObserverBehaviour: {fileID: 1514863744}
   mHiddenRoot: {fileID: 0}
+<<<<<<< Updated upstream
   mTargetName: CoolingTowerModel
   mDatasetName: Vuforia/CoolingTowerModel.xml
   mCastedBehaviour: {fileID: 1514863744}
   mModelScale: {x: 0.049664, y: 0.061413668, z: 0.04891514}
   mModelTargetPreview: {fileID: 0}
+=======
+  mTargetName: CoolingTower
+  mDatasetName: Vuforia/CoolingTower.xml
+  mCastedBehaviour: {fileID: 1514863744}
+  mModelScale: {x: 0.089664, y: 0.110877, z: 0.088312}
+  mModelTargetPreview: {fileID: 0}
+--- !u!21 &1636269308
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Unlit/Transparent
+  m_Shader: {fileID: 10750, guid: 0000000000000000f000000000000000, type: 0}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+>>>>>>> Stashed changes
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<QCARInfo>
+    <TargetSet version="36.0" toolVersion="v6.2.14">
+        <ModelTarget name="MainReactor" targetId="3f5f2e98d9b244f78176c121d5f736b0" version="13.0" toolVersion="v6.2.14" bbox="-0.025524 -0.000045 -0.025119 0.025498 0.093035 0.025111" trackingMode="car" upVector="0.0 1.0 0.0" optimizeTrackingFor="default" realisticTextures="no" />
+    </TargetSet>
+    <Assembly name="MainReactor" assemblyId="d7a411061806437e80f4c73cea4d4c21">
+        <Part name="MainReactor" translation="0 0 0" rotation="AD: 0 0 1 0" />
+        <EntryPoint name="(none)" trained="yes" />
+    </Assembly>
+</QCARInfo>
