@@ -5,19 +5,33 @@ using UnityEngine.Video;
 
 public class VideoDetector : MonoBehaviour
 {
-    public GameObject video;
+    public GameObject reactorVideo;
+    public GameObject coolingTowerVideo;
     public GameObject ARCamera;
+
+    public bool isReactor;
+    public bool isCoolingTower;
 
     public void Detected()
     {
-        video.SetActive(true);
-        ARCamera.SetActive(false);
-        Debug.Log("Detected");
+        if (isReactor == true)
+        {
+            reactorVideo.SetActive(true);
+            ARCamera.GetComponent<Camera>().enabled = false;
+            Debug.Log("Detected");
+        }
+
+        if (isCoolingTower == true)
+        {
+            coolingTowerVideo.SetActive(true);
+            ARCamera.GetComponent<Camera>().enabled = false;
+            Debug.Log("Detected");
+        }
     }
 
     public void Undetected()
     {
-        video?.SetActive(false);
+        ARCamera.GetComponent<Camera>().enabled = true;
         Debug.Log("Undetected");
     }
 }
