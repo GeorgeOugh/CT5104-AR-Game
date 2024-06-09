@@ -6,32 +6,49 @@ using UnityEngine.Video;
 public class VideoDetector : MonoBehaviour
 {
     public GameObject reactorVideo;
+    public GameObject reactorPlayer;
     public GameObject coolingTowerVideo;
+    public GameObject coolingTowerPlayer;
     public GameObject ARCamera;
+    public GameObject MainCamera;
 
-    public bool isReactor;
-    public bool isCoolingTower;
-
-    public void Detected()
+    public void DetectedReactor()
     {
-        if (isReactor == true)
-        {
-            reactorVideo.SetActive(true);
-            ARCamera.GetComponent<Camera>().enabled = false;
-            Debug.Log("Detected");
-        }
-
-        if (isCoolingTower == true)
-        {
-            coolingTowerVideo.SetActive(true);
-            ARCamera.GetComponent<Camera>().enabled = false;
-            Debug.Log("Detected");
-        }
+        reactorVideo.SetActive(true);
+        reactorPlayer.SetActive(true);
+        ARCamera.GetComponent<Camera>().enabled = false;
+        MainCamera.GetComponent<Camera>().enabled = true;
+        Debug.Log("Detected");
+        StartCoroutine(waitingReactor());
     }
 
-    public void Undetected()
+    public void DetectedCoolingTower()
     {
+        coolingTowerVideo.SetActive(true);
+        coolingTowerPlayer.SetActive(true);
+        ARCamera.GetComponent<Camera>().enabled = false;
+        MainCamera.GetComponent<Camera>().enabled = true;
+        Debug.Log("Detected");
+        StartCoroutine(waitingCoolingTower());
+    }
+
+    IEnumerator waitingReactor()
+    {
+        yield return new WaitForSeconds(79);
+
+        reactorVideo.SetActive(false);
+        reactorPlayer.SetActive(false);
         ARCamera.GetComponent<Camera>().enabled = true;
-        Debug.Log("Undetected");
+        MainCamera.GetComponent<Camera>().enabled = false;
+    }
+
+    IEnumerator waitingCoolingTower()
+    {
+        yield return new WaitForSeconds(51);
+
+        coolingTowerVideo.SetActive (false);
+        coolingTowerPlayer.SetActive (false);
+        ARCamera.GetComponent<Camera>().enabled = true;
+        MainCamera.GetComponent<Camera>().enabled = false;
     }
 }
