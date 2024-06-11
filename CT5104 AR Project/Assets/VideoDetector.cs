@@ -11,11 +11,13 @@ public class VideoDetector : MonoBehaviour
     public GameObject coolingTowerPlayer;
     public GameObject ARCamera;
     public GameObject MainCamera;
+    public GameObject SceneChanger;
 
     public void DetectedReactor()
     {
         reactorVideo.SetActive(true);
         reactorPlayer.SetActive(true);
+        SceneChanger.SetActive(false);
         ARCamera.GetComponent<Camera>().enabled = false;
         MainCamera.GetComponent<Camera>().enabled = true;
         Debug.Log("Detected");
@@ -26,6 +28,7 @@ public class VideoDetector : MonoBehaviour
     {
         coolingTowerVideo.SetActive(true);
         coolingTowerPlayer.SetActive(true);
+        SceneChanger.SetActive(false);
         ARCamera.GetComponent<Camera>().enabled = false;
         MainCamera.GetComponent<Camera>().enabled = true;
         Debug.Log("Detected");
@@ -38,6 +41,7 @@ public class VideoDetector : MonoBehaviour
 
         reactorVideo.SetActive(false);
         reactorPlayer.SetActive(false);
+        SceneChanger.SetActive(true);
         ARCamera.GetComponent<Camera>().enabled = true;
         MainCamera.GetComponent<Camera>().enabled = false;
     }
@@ -48,6 +52,7 @@ public class VideoDetector : MonoBehaviour
 
         coolingTowerVideo.SetActive (false);
         coolingTowerPlayer.SetActive (false);
+        SceneChanger.SetActive(true);
         ARCamera.GetComponent<Camera>().enabled = true;
         MainCamera.GetComponent<Camera>().enabled = false;
     }
